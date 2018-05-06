@@ -1,0 +1,76 @@
+- Class: meta
+  Course: All The Quizes
+  Lesson: Quiz 1
+  Author: John Santerre
+  Type: Standard
+  Organization: your organization's name goes here
+  Version: 2.4.3
+
+- Class: exact_question
+  Output: Load the cars dataset
+  AnswerTests: omnitest(correctExpr='cars')
+  Hint: 'cars'
+
+- Class: exact_question
+  Output: Display the 1st column
+  AnswerTests: omnitest(correctExpr='cars[,1]')
+  Hint:  'cars[,1]'
+
+- Class: text
+  Output: Other answers include cars[1], cars[,1], cars$speed, cars[colnames(cars)[1]]
+
+- Class: exact_question
+  Output: What are the column names
+  AnswerTests: omnitest(correctExpr='colnames(cars)'
+  Hint:  colnames(cars)
+
+- Class: exact_question
+  Output: How many rows are there
+  AnswerTests: omnitest(correctExpr='nrow(cars)')
+  Hint:  nrow(cars)
+
+- Class: text
+  Output: Other answers include length(cars$speed), str(cars), nrow(cars)
+
+- Class: exact_question
+  Output:  Display the second row.
+  AnswerTests: omnitest(correctExpr='cars[2,]')
+  Hint:  cars[2,]
+
+- Class: exact_question
+  Output:  What row number/s has/have entry speed == 16?
+  AnswerTests: omnitest(correctExpr='which(cars$speed==16)')
+  Hint:  which(cars$speed==16)
+
+- Class: exact_question
+  Output:  How many row number/s has/have entry speed == 16?
+  AnswerTests: omnitest(correctExpr='length(which(cars$speed==16))')
+  Hint:  length(which(cars$speed==16))
+
+- Class: text
+  Output: Other answers include length(which(cars$speed==16)), sum(cars$speed == 16),subset(cars,cars$speed==16)
+
+
+- Class: exact_question
+  Output:  Create a new dataframe composed of all rows where where Speed > 15.
+  AnswerTests: omnitest(correctExpr='cars[cars$speed > 15,]')
+  Hint:  cars[cars$speed > 15,]
+
+- Class: text
+  Output: Other answers include subset(cars,cars$speed>15), data.frame(which(cars$speed >15)), length(which(cars$speed==16))
+
+- Class: exact_question
+  Output:  Create a new dataframe with all examples where Speed <23 and dist>25.
+  AnswerTests: omnitest(correctExpr='cars[cars$speed < 23 & cars$dist > 25,]')
+  Hint:  cars[cars$speed < 23 & cars$dist > 25,]
+
+
+
+
+
+
+
+
+
+
+
