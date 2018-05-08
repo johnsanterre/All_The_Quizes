@@ -30,7 +30,7 @@
   Hint: "nrow(mtcars)"
 
 - Class: exact_question
-  Output:  What row number/s has/have learning value < 20?
+  Output:  What row number/s has/have mpg value < 20?
   CorrectAnswer: which(mtcars$mpg <20)
   AnswerTests:   omnitest(correctExpr = "which(mtcars$mpg <20)")
   Hint: "which(mtcars$mpg <20)"
@@ -43,7 +43,7 @@
 
 - Class: exact_question
   Output:  Create a new dataframe with all examples where disp > 160.
-  CorrectAnswer: attitude[mtcars$disp >160,]
+  CorrectAnswer: mtcars[mtcars$disp >160,]
   AnswerTests:   omnitest(correctExpr = "mtcars[mtcars$disp >160,]")
   Hint: "mtcars[mtcars$disp >160,]"
 
