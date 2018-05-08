@@ -21,7 +21,7 @@
 
 - Class: exact_question
   Output: What are the column names
-  AnswerTests: omnitest(correctExpr='colnames(cars)'
+  AnswerTests: omnitest(correctExpr='colnames(cars))'
   Hint:  colnames(cars)
 
 - Class: exact_question
