@@ -1,0 +1,49 @@
+- Class: meta
+  Course: All The Quizes
+  Lesson: Quiz 3
+  Author: John Santerre
+  Type: Standard
+  Organization: your organization's name goes here
+  Version: 2.4.3
+
+- Class: exact_question
+  Output:  Load the cars dataset and determine the  average speed?.
+  AnswerTests: omnitest(correctExpr='mean(cars$speed)')
+  Hint: "mean(cars$speed)"
+
+- Class: exact_question
+  Output:   What is the average speed of cars where speed >15
+  CorrectAnswer: mean(cars[cars$speed>15,]$speed)
+  AnswerTests:   omnitest(correctExpr = 'mean(cars[cars$speed>15,]$speed)')
+  Hint: "mean(cars[cars$speed>15,]$speed)"
+
+- Class: exact_question
+  Output:   What is the standard deviation of column one.
+  CorrectAnswer: sd(cars$speed)
+  AnswerTests:   omnitest(correctExpr = "sd(cars$speed)")
+  Hint: "sd(cars$speed)"
+
+- Class: exact_question
+  Output:  What is the minimal value in column 1.
+  CorrectAnswer: min(cars[,1])
+  AnswerTests:   omnitest(correctExpr = "min(cars[,1])")
+  Hint: "min(cars[,1])"
+
+- Class: exact_question
+  Output:  Plot a histogram of Column 1.
+  CorrectAnswer: hist(cars$speed)
+  AnswerTests:   omnitest(correctExpr = "hist(cars$speed)")
+  Hint: "hist(cars$speed)"
+
+- Class: exact_question
+  Output:  Explain difference between "which(c(1,2,3)>2)" and "c(1,2,3)>2"?
+  CorrectAnswer:
+  AnswerTests:   omnitest(correctExpr = "")
+  Hint: "Everyone gets this wrong"
+
+
+
+
+
+
+
