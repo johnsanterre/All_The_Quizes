@@ -6,10 +6,6 @@
   Organization: your organization's name goes here
   Version: 2.4.3
 
-- Class: exact_question
-  Output:  Sort c(5,2,3)
-  AnswerTests: omnitest(correctVal='5')
-
 
 - Class: exact_question
   Output:  Sort c(5,2,3)
