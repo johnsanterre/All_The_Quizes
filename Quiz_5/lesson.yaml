@@ -1,0 +1,48 @@
+- Class: meta
+  Course: All The Quizes
+  Lesson: Quiz 5
+  Author: John Santerre
+  Type: Standard
+  Organization: your organization's name goes here
+  Version: 2.4.3
+
+- Class: exact_question
+  Output:  Sort c(5,2,3)
+  AnswerTests: omnitest(correctExpr='sort(c(5,2,3))')
+  Hint: "sort(), c(5,2,3)[order(c(5,2,3))]"
+
+- Class: exact_question
+  Output:   Get 5 random values from the first 100 numbers.
+  AnswerTests:   omnitest(correctExpr = 'sample(1:100, 5)')
+  Hint: "sample(1:100, 5)"
+
+- Class: exact_question
+  Output:   With one line of code do the last question 3 times.
+  AnswerTests:   omnitest(correctExpr = "replicate(3, sample(1:100,5))")
+  Hint: "replicate(3, sample(1:100,5))"
+
+- Class: exact_question
+  Output:  Make a function that takes a number, adds 5 to it and returns it.
+  AnswerTests:   omnitest(correctExpr = "function(x){x+5}")
+  Hint: "function(x){x+5}"
+
+- Class: exact_question
+  Output:  Make a function that takes two variables, the first is a vector the second is a integer. Return the vector times the interger.
+  AnswerTests:   omnitest(correctExpr = "function(x,y){x*y}")
+  Hint: "function(x,y){x*y}"
+
+- Class: exact_question
+  Output:  What function can you sue to make a normal distribtuion?
+  AnswerTests:   omnitest(correctExpr = "rnorm()")
+  Hint: "rnorm()"
+
+- Class: exact_question
+  Output:  What is the best way to do something to an entire vector?
+  AnswerTests:   omnitest(correctExpr = "Apply Functions")
+  Hint: "Apply Functions, apply(), lapply() , sapply(), vapply(), mapply(), rapply(), and tapply()"
+
+
+
+
+
+
