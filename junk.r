@@ -1,8 +1,8 @@
 sec A
 
 Sec B
-
+This is section B  Different area then above.
 
 Sec C
 
-THIS IS WRONG
+THIS IS dhtahthatG
